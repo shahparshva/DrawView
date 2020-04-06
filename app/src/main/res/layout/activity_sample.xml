@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sample">
+
+    <com.example.parshva.myapplication.MYVIEW_1810
+        android:id="@+id/my_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/sview"
+        android:background="#000000" />
+
+    <HorizontalScrollView
+        android:id="@+id/sview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:onClick="clear"
+                android:text="Clear" />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:onClick="Undo"
+                android:text="Undo" />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:onClick="Redo"
+                android:text="Redo" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>
